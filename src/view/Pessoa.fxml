@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerPessoa">
+   <children>
+      <Label layoutX="23.0" layoutY="34.0" text="Cadastro de Pessoas">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="86.0" text="Nome:" />
+      <Label layoutX="23.0" layoutY="114.0" text="Email:" />
+      <TextField fx:id="textFieldNome" layoutX="72.0" layoutY="82.0" />
+      <TextField fx:id="textFieldEmail" layoutX="72.0" layoutY="110.0" />
+      <Button layoutX="72.0" layoutY="150.0" mnemonicParsing="false" onAction="#inserirPessoa" text="Inserir" />
+      <Button fx:id="btAlterar" layoutX="306.0" layoutY="295.0" mnemonicParsing="false" text="Alterar" />
+      <Button fx:id="btDeletar" layoutX="375.0" layoutY="295.0" mnemonicParsing="false" text="Deletar" />
+      <Label layoutX="300.0" layoutY="34.0" text="Lista de Pessoas">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaLista" layoutX="300.0" layoutY="72.0" prefHeight="210.0" prefWidth="398.0" />
+      <Button fx:id="btListar" layoutX="132.0" layoutY="150.0" mnemonicParsing="false" onAction="#btListarPessoas" text="Listar Pessoas" />
+      <Label layoutX="449.0" layoutY="39.0" text="Bucar Pessoa por ID:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldBuscaId" layoutX="575.0" layoutY="35.0" prefHeight="25.0" prefWidth="49.0" />
+      <Button fx:id="btPesquisaPessoa" layoutX="631.0" layoutY="35.0" mnemonicParsing="false" onAction="#BuscarPessoa" text="Pesquisar" />
+      <Button fx:id="btSair" layoutX="662.0" layoutY="295.0" mnemonicParsing="false" onAction="#Sair" text="Sair" />
+   </children>
+</AnchorPane>
